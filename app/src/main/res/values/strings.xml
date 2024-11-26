@@ -2,5 +2,9 @@
     <string name="app_name">Reto2</string>
     <string name="newElementHint">Nuevo Elemento</string>
     <string name="newElementBtn">Crear Nuevo Elemento</string>
-    <string name="elementListTitle">Elementos</string>
+    <string name="elementListTitle">Lista de Elementos</string>
+    <string name="updateElementBtn">Actualizar Elemento</string>
+    <string name="deleteElementBtn">Borrar Elemento</string>
+    <string name="modifyElementHint">¿Qué elemento se va a modificar?</string>
+    <string name="clearListBtn">Limpiar Lista</string>
 </resources>
