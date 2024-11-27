@@ -32,6 +32,7 @@
         android:paddingVertical="16dp"
         android:orientation="vertical"
         android:gravity="center"
+        android:elevation="10dp"
     >
         <EditText
             android:id="@+id/etNewElement"
@@ -50,15 +51,16 @@
 
     <LinearLayout
         android:id="@+id/elementListLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@+id/addElementLayout"
+        app:layout_constraintBottom_toTopOf="@+id/btnClearList"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginHorizontal="16dp"
-    >
+        android:layout_marginHorizontal="16dp">
+
         <TextView
             android:id="@+id/tvElementList"
             android:layout_width="wrap_content"
@@ -71,9 +73,15 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvElementList"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-        />
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="8dp"
+            android:layout_weight="0.1"
+            android:maxHeight="200dp"
+            android:overScrollMode="always"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/tvElementList" />
     </LinearLayout>
 
     <Button
